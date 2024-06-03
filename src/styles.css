@@ -1,0 +1,86 @@
+/* Colors */
+:root {
+    --color-primary-white: rgb(240, 240, 240);
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .gallery .photo-card {
+    width: 45%; /* Adjust the width to ensure two cards fit in a row with some margin */
+    margin: 10px; 
+    position: relative;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+    color: var(--color-primary-white);
+    box-shadow: 0 10px 30px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .gallery .photo-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    display: block;
+    border-radius: 10px;
+  }
+  
+  .gallery .photo-card .info {
+    display: flex;
+    flex-direction: column; /* Stack the info items vertically */
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 0 0 10px 10px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 0; /* Initially hide the info */
+    transition: opacity 0.3s ease-out;
+  }
+  
+  .gallery .photo-card .description {
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    /* border-radius: 10px 10px 0 0; */
+    color: var(--color-primary-white);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    box-sizing: border-box;
+    opacity: 1; /* Show description by default */
+  }
+
+  .gallery .photo-card:hover .description {
+    opacity: 0; /* Hide the description on hover */
+  }
+  
+  .gallery .photo-card:hover .info {
+    opacity: 1; /* Show the info on hover */
+  }
+  
+  .gallery .photo-card .info-item {
+    color: var(--color-primary-white);
+    font-size: 14px;
+    margin: 5px 0; /* Add some spacing between info items */
+  }
+  
+  .material-symbols-outlined {
+    vertical-align: middle;
+  }
+
+
+
+
