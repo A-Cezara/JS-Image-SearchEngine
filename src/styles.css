@@ -19,7 +19,7 @@
   }
   
   .gallery .photo-card {
-    width: 45%; /* Adjust the width to ensure two cards fit in a row with some margin */
+    width: calc(33.33% - 20px);
     margin: 10px; 
     position: relative;
     border-radius: 10px;
