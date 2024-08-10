@@ -1,11 +1,11 @@
 {
-  "name": "parcel-project-template",
+  "name": "JS-Image-SearchEngine",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://a-cezara.github.io/goit-js-hw-11",
+  "homepage": "https://a-cezara.github.io/JS-Image-SearchEngine",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /goit-js-hw-11/"
+    "build": "parcel build src/*.html --public-url /JS-Image-SearchEngine/"
   },
   "repository": {
     "type": "git",
